@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | Mohammad Sami</title>
+    <link rel="shortcut icon" href="TASK1Images/favicon2.ico" type="image/x-icon">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+    background-color: rgb(238, 226, 226);
+    }
+    .navbar{
+        height: 120px;
+        width: 100%;
+        background-color: black;
+        position: relative;
+    }
+    .logo img{
+        height: 100px;
+        position: absolute;
+        top: 5px;
+        left: 120px;
+    }
+    .avatar img{
+        height: 150px;
+        position: absolute;
+        top: 40px;
+        left: 700px;
+    }
+    .cancel{
+        position: absolute;
+        top: 45px;
+        left: 1400px;
+    }
+    .cancel img{
+        height: 30px;
+    }
+    
+    .text{
+        margin-top: 80px;
+        height: 150px;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .namenmail{
+        height: 100px;
+        width: 100%;
+        /* background-color: green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .name{
+        height: 100%;
+        width: 25%;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        /* font-size: 20px; */
+    }
+    .name input{
+        font-size: 25px;
+    }
+    .mail{
+        height: 100%;
+        width: 25%;
+        /* background-color: rgb(90, 90, 20); */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .mail input{
+        font-size: 25px;
+    }
+    
+    .projandbudget{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .budget{
+        height: 100%;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .typeofproj{
+        height: 100%;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .typeofproj select{
+        font-size: 20px;
+        height: 60px;
+    }
+    .details{
+        height: 300px;
+        width: 775px;
+        margin-left: 371px;
+    }
+    .msg{
+        font-size: 20px;
+    }
+   
+    .submit{
+        width: 100%;
+        height: 120px;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .styled-button {
+      width: 180px;
+      height: 50px;
+      background-color:  transparent;
+      color: #6e07f3;
+      border: 2px solid #6e07f3;
+      font-size: 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .styled-button:hover {
+      background-color: #6e07f3;
+      color: rgb(238, 226, 226);
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+       <div class="logo"><img src="TASK1Images/mylogo.jpg" alt="My Logo"></div> 
+       <div class="avatar"><img src="TASK1Images/face_avatar-removebg-preview.png" alt="myavatar"></div>
+       <div class="cancel"><a href="TASK1index.html"><img src="TASK1Images/whitecancel.png" alt="cancel"></a></div>
+    </div>
+    <br> <br> <br> <br>
+    <section class="content">
+        <!-- <img src="cancel.png" alt=""> -->
+        <div class="text">I'm excited to learn about your project. <br> Ready to get started?</div>
+        <div class="namenmail">
+            <div class="name">
+                <span style="color: rgba(11, 11, 11, 0.655); font-size: larger;">Name :</span>
+                <input type="text" style="height: 50px;">
+            </div>
+            <div class="mail">
+                <span style="color: rgba(11, 11, 11, 0.655); font-size: larger;">Email :</span>
+                <input type="email" style="height: 50px;">
+            </div>
+        </div>
+
+
+        <div class="projandbudget">
+            <div class="typeofproj">
+                    <label style="color: rgba(11, 11, 11, 0.655); font-size: larger;" for="typeofproj">Type of Project :</label> 
+                <select name="pets" id="typeofproj">
+                <option value="">--Please choose an option--</option>
+                 <option value="webapp">Web App</option>
+                    <option value="responsive design">Responsive Design</option>
+                    <option value="mobileapp">Mobile App</option>
+                 <option value="other">Other</option>
+            </select>
+            </div>
+            <div class="budget">
+                <span style="color: rgba(11, 11, 11, 0.655); font-size: larger;">Budget :</span> 
+                <input type="text" style="height: 60px;">
+            </div>
+
+            </div>
+        
+        
+        </div>
+        <div class="details">
+            <span style="color: rgba(11, 11, 11, 0.655); font-size: larger;">Additional Details :</span> <br>
+            <textarea name="msg" id="msg" cols="103" rows="18" ></textarea>
+        </div>
+        <div class="submit">
+            <button class="styled-button" onclick="alert('Thank You...Data Submitted Succesfully..!')">Submit</button>
+        </div>
+    </section>
+</body>
+</html>

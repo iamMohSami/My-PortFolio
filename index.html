@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIKE Shoes</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="body">
+    <header>
+      <nav class="nav">
+        <div class="imgcont">
+            <img
+              src="Images/nikelogo-removebg-preview.png"
+              alt="Logo"
+            />
+        </div>
+        <div class="menu">
+                <span><a href="#">New Releases</a></span>
+                <span><a href="#">Men</a></span>
+                <span><a href="#">Women</a></span>
+                <span><a href="#">Kids</a></span>
+        </div>
+        <div class="greenarea">
+          <div class="searchbox">
+            <img src="Images/magnifying-glass.png" alt="Search" id="magnify">
+            <input type="text" placeholder="Search...">
+          </div>
+          <a href="#">   <div class="loginicon">
+          <img src="Images/login-removebg-preview.png" alt="login" id="login">
+            <p>Login</p>  
+          </div></a>
+        </div>
+        <img src="Images/shoe.png" alt="shoe" class="shoeimg">
+    </nav>
+    </header>
+      <div class="body"> 
+        <div class="text">
+         <div class="h1box"><h1>Nike Air Max</h1> <h3>Sports Shoes</h3></div> 
+         <div class="starbox">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <div class="pricebox">
+        <pre>
+          <strike>$ 99.00</strike>    $74.99/-
+        </pre>
+        </div>
+         
+        <div class="textbox">
+          <p>The NIKE AIR Max series epitomizes a harmonious fusion of trendsetting design and exceptional performance. With its iconic visible air units, the collection showcases groundbreaking cushioning technology while making a bold fashion statement</p>
+        </div>
+        
+        <a href="#" onclick="alert('Product Added to Cart Succesfully..!')"><div class="addtocart">
+            <p>Add to Cart</p>
+        </div>
+      </a>
+        </div>
+      </div>
+  
+<div class="overlay" id="overlay">
+      <div class="fullpage">
+        <div class="mainbox">
+          <button id="closebutton" class="close-button">X</button>
+          <h1>Login</h1>
+          <div class="email">
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="password">
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="forgotpass">
+            <a href="##"><p>Forgot password?</p></a>
+          </div>
+          <a href="##">
+            <div class="loginbox" onclick="alert('Login Succesfull..!')">
+              <p>Login</p>
+            </div>
+          </a>
+          <div class="oneline">
+            <p>Don't have an account? <a href="###">Signup</a></p>
+          </div>
+          <br />
+          <br />
+          <hr />
+          <a href="####">
+            <div class="media" id="google">
+              <img src="Images/search.png" alt="google" />
+              <p>Login with Google</p>
+            </div>
+          </a>
+          <a href="###">
+            <div class="media" id="facebook">
+              <img src="Images/fb.png" alt="facebook">
+              <p>Login with Facebook</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const loginButton = document.getElementById('login');
+  const overlay = document.getElementById('overlay');
+  const closeButton = document.getElementById('closebutton'); // Get the close button element
+
+  loginButton.addEventListener('click', function() {
+    overlay.style.display = 'block';
+  });
+
+  // Hide the overlay and login box when the close button is clicked
+  closeButton.addEventListener('click', function() {
+    overlay.style.display = 'none';
+  });
+
+  // Hide the overlay and login box when the overlay is clicked
+  overlay.addEventListener('click', function(event) {
+    if (event.target === overlay) {
+      overlay.style.display = 'none';
+    }
+  });
+});
+
+</script>
+
+
+  </body>
+</html>
